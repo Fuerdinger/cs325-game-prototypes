@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hello! Amaze!</title>
+    <title>DR. BOB</title>
     <script src="js/phaser.js"></script>
     <script src="js/main.js"></script>
 
@@ -22,72 +22,68 @@ body
 <body>
 <div id="game"></div>
 <div id="readme">
-<h2>Your game title</h2>
+<h2>DR. BOB</h2>
 
 <ul>
 <li><strong>Originality:</strong>
-What is original about your game?
+The game features an original soundtrack and original graphics that set it apart from anything else on the Internet.
 </li>
 
 <li><strong>Technical Merit:</strong>
-What is interesting about your game technology?
+I started with a simple example from Phaser's examples page, but by the time I was finished none of the original example code is present in the game. To build the levels I used Tiled, a tile map editor that allowed me to export .json files that I could import into Phaser.
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
-What did you learn from this prototype?
-What was the easiest or hardest part of making it?
+I learned the basics of Phaser and its physics engine, along with pulling data from a tile map, getting input, and switching levels. The easiest part was learning the JavaScript (as I already knew most of it, I just needed to brush up on a few things), and the hardest was setting up my developer environment, not because it was difficult but because it was time consuming.
 </li>
 
 <li><strong>Prototype Assets:</strong>
-Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
-<ul>
-<li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
-</ul>
+100% of the assets, including the music, were created from scratch.
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+My game most closely resembles Mario vs. Donkey Kong for the Game Boy Advance. I initially borrowed some code from https://www.phaser.io/examples/v3/view/physics/arcade/basic-platform but I eventually replaced all the code that I borrowed except for the game config object, making the example more of a reference.
 </li>
 
 <li><strong>High Concept:</strong>
-A one-sentence summary of your game.
+Navigate Dr. Bob to each level's goal by carefully avoiding enemies and jumping from platform to platform. 
 </li>
 
 <li><strong>Theme:</strong>
-State which of the Storymatic themes you used.
+The theme is kept rather bland and simple with the characters all resembling stick figures with simple animations, but it adds to the game's charm.
 </li>
 
 <li><strong>Mandated Variety:</strong>
-State which input, randomness, genre, and play style you used in this prototype.
+The game ignores any kind of random elements and varies only with direct player input. The genre is a 2D platformer, with very light puzzle elements (if I had more time, I would have added actual puzzles).
 </li>
 
 <li><strong>Prototype Goal:</strong>
-What game mechanic is this prototype evaluating?
+The main game mechanic is just 2D movement by running and jumping. The challenges in each level are oriented around this mechanic.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
-What experience do you want players to have when playing your game?
+I want players to be amused by the silliness and simplicity of Dr. Bob and his short and quick platforming challenges.
 </li>
 
 <li><strong>Gameplay:</strong>
 A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+The player uses WASD to control Dr. Bob and presses Space to jump. Each level has a starting position for Dr. Bob, the enemies, and a goal. To complete a level Dr. Bob must touch the goal and avoid the enemies; touching an enemy will start the level over. If I had more time for this project I would have implemented a spike tile which would kill Dr. Bob similar to an enemy, and I also would have given Dr. Bob a gun to shoot pellets, similar to Mega Man, and include enemies which can shoot pellets back at Dr. Bob.
 </li>
 
 <li><strong>Strategies:</strong>
-What player strategies do you expect will be effective at playing this game?
+Players will have to consider enemy and platform placements when moving around and trying to reach the goal. There are only a few basic gameplay mechanics (moving left and right and jumping) but in one of the game's levels careful maneuvers and planning is required.
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
-A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
-How will the dramatic tension interact with the gameplay tension?
+After earning his PhD in Algebra, Dr. Bob puts his skills to the test in a series of platforming challenges that make up his "experiments." In designing these experiments he kept everything rather abstract, sticking to only a few colors, enemy types, and obstacles. Other than this simple backstory, there are no other narrative elements to the game.
 </li>
 
 <li><strong>Target Audience:</strong>
-A single sentence that describes the demographic you're trying to reach.
+The demographic would be young children and senior citizens, as these groups would likely appreciate the game's simplicity.
 </li>
 
 <li><strong>Play Time:</strong>
-How long does your game take to play?
+A skilled player can complete the game in under a minute.
 </li>
 
 </ul>
