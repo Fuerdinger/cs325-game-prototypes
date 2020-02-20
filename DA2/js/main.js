@@ -6,18 +6,7 @@ var config =
     width: 800,
     height: 600,
     parent: 'game',
-    physics:
-    {
-        default: 'arcade',
-        arcade:
-        {
-            gravity:
-            {
-                y: 300
-            },
-            debug: false
-        }
-    },
+
     scene:
     {
         preload: preload,
@@ -26,7 +15,7 @@ var config =
     }
 };
 
-var game = new Phaser.Game( config );
+var game = new Phaser.Game(config);
 
 
 var cursors; //will hold input state of the arrow keys
