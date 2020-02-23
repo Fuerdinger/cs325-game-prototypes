@@ -1,0 +1,28 @@
+{
+    "folder": "assets/bezos",
+    "dialogue":
+    [
+        {"name": "Bezos", "text": "So we meet again. Elon.", "image": "scary"},
+        {"name": "Elon", "text": "Bezos.", "image": "scary"},
+        {"name": "Bezos", "text": "We're cut from the same cloth, you and I...", "image": "smiling"},
+        {"name": "Bezos", "text": "So why do I hate you so much...", "image": "sad"},
+        {"name": "Elon", "text": "I'll answer that question if you answer mine.", "image": "sad"},
+        {"name": "Bezos", "text": "Go ahead.", "image": "neutral"},
+        {"name": "Elon", "text": "Do you know Dr. Bob?", "image": "neutral"},
+        {"name": "Bezos", "text": "Nyahahaha!", "image": "smiling"},
+        {"name": "Bezos", "text": "AHAHAHAHAHAH!", "image": "neutral"},
+        {"name": "Bezos", "text": "Ahem.", "image": "sad"},
+        {"name": "Bezos", "text": "No clue.", "image": "scary"},
+        {"name": "Bezos", "text": "Will you answer my question now?", "image": "sad"},
+        {"name": "Elon", "text": "Nah.", "image": "sad"},
+        {"name": "Bezos", "text": "Ugh Elon why do you have to be like that? That's exactly why I hate you so much!", "image": "sad"},
+        {"name": "Elon", "text": "Tell your wife I said \"hi\" and that I'll see her later tonight.", "image": "sad"},
+        {"name": "Bezos", "text": ".......", "image": "sad"}
+    ],
+    "accusation":
+    [
+        {"name": "Bezos", "text": "I've been waiting for this moment for so long.", "image": "scary"},
+        {"name": "Bezos", "text": "I finally have an opportunity to kill you.", "image": "neutral"},
+        {"name": "Bezos", "text": "Nyah! Nyahahahahahah!", "image": "smiling"}
+    ]
+}

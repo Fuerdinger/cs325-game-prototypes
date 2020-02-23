@@ -1,0 +1,15 @@
+{
+    "folder": "assets/intro",
+    "dialogue":
+    [
+        {"name": "????", "text": "Oh hi, I didn't see you there. I don't think we've met. Press enter to talk to me.", "image": "neutral"},
+        {"name": "Elon Musk", "text": "My name is Elon Musk, but my friends just call me Elon.", "image": "neutral"},
+        {"name": "Elon", "text": "Anyway...", "image": "crazed"},
+        {"name": "Elon", "text": "One of my employees was tragically found dead this morning. One of my best employees, mind you.", "image": "staring"},
+        {"name": "Elon", "text": "That's right. I'm talking about Dr. Bob. And I think it was murder.", "image": "staring"},
+        {"name": "Elon", "text": "And unfortunately, all evidence points to the culprit being one of my best friends...", "image": "sad"},
+        {"name": "Elon", "text": "So, you're going to help me sleuth this out, okay?", "image": "crazed"},
+        {"name": "Elon", "text": "And once you think you know who it is... select Solve the Case in the menu.", "image": "neutral"},
+        {"name": "Elon", "text": "Let's do this.", "image": "smoking"}
+    ]
+}

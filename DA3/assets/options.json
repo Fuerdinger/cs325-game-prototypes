@@ -1,0 +1,170 @@
+{
+    "folder": "assets/solve",
+    "options":
+    {
+        "0": 
+        {
+            "question": "Let's do some investigating.",
+            "options":
+            [
+                {"option": "Interrogate Trump", "goto": "trump_dialogue"},
+                {"option": "Interrogate Bezos", "goto": "bezos_dialogue"},
+                {"option": "Interrogate Xi Jinping", "goto": "xi_dialogue"},
+                {"option": "Interrogate Putin", "goto": "vladimir_dialogue"},
+                {"option": "Solve the case!", "goto": "1"}
+            ]
+        },
+        "1": 
+        {
+            "question": "Who dunnit?",
+            "options":
+            [
+                {"option": "Trump", "goto": "2"},
+                {"option": "Bezos", "goto": "3"},
+                {"option": "Xi Jinping", "goto": "4"},
+                {"option": "Putin", "goto": "5"},
+                {"option": "I did!", "goto": "6"},
+                {"option": "You did!", "goto": "7"},
+                {"option": "Dr. Bob is still alive.", "goto": "8"}
+            ]
+        },
+        "2": 
+        {
+            "question": "Why do you think?",
+            "options":
+            [
+                {"option": "I don't know, I just don't like Trump.", "goto": "9"},
+                {"option": "He made that really weird joke. Was he kidding?", "goto": "11"},
+                {"option": "Dr. Bob didn't vote for him.", "goto": "9"}
+            ]
+        },
+        "3":
+        {
+            "question": "Why do you think?",
+            "options":
+            [
+                {"option": "He hates you, and laughed like a madman when asked about Dr. Bob.", "goto": "11"},
+                {"option": "Dr. Bob doesn't use Amazon prime.", "goto": "9"}
+            ]
+        },
+        "4":
+        {
+            "question": "Why do you think?",
+            "options":
+            [
+                {"option": "One word: Coronavirus.", "goto": "11"},
+                {"option": "He's a dirty commie!", "goto": "9"}
+            ]
+        },
+        "5":
+        {
+            "question": "Why do you think?",
+            "options":
+            [
+                {"option": "Never trust a communist.", "goto": "9"},
+                {"option": "He killed Dr. Joe, so of course he'd kill Dr. Bob!", "goto": "11"}
+            ]
+        },
+        "6":
+        {
+            "question": "No you didn't.",
+            "options":
+            [
+                {"option": "Yes I did!", "goto": "6"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "7":
+        {
+            "question": "No I didn't.",
+            "options":
+            [
+                {"option": "Yes you did!", "goto": "7"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "8":
+        {
+            "question": "He's laying in a puddle of blood at his desk. You sure?",
+            "options":
+            [
+                {"option": "Did you check his pulse?", "goto": "10"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "9":
+        {
+            "question": "Hmm... I don't know, I think we're overlooking something.",
+            "options":
+            [
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "10":
+        {
+            "question": "Just checked his pulse. He's definitely dead.",
+            "options":
+            [
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "11":
+        {
+            "question": "Yeah, but why would he kill Dr. Bob?",
+            "options":
+            [
+                {"option": "Dr. Bob must have known something which couldn't be released.", "goto": "12"},
+                {"option": "Dr. Bob said something mean to him on Twitter.", "goto": "9"},
+                {"option": "Dr. Bob roasted him on Comedy Central a few nights ago.", "goto": "9"},
+                {"option": "He vandalized that bathroom at Walmart a couple weeks ago.", "goto": "9"}
+            ]
+        },
+        "12":
+        {
+            "question": "What did Dr. Bob know?",
+            "options":
+            [
+                {"option": "He's one of two people who know the origins of the coronavirus.", "goto": "13"},
+                {"option": "He has insider info on Russia's military strategy in the Middle East.", "goto": "14"},
+                {"option": "He's about to leak top secret FBI documents regarding the moon landing.", "goto": "15"},
+                {"option": "He knows all 42 of Bezos' mistresses and was about to reveal their names.", "goto": "16"}
+            ]
+        },
+        "13":
+        {
+            "question": "That would probably make Xi Jinping the murderer. Would you agree?",
+            "options":
+            [
+                {"option": "Yes.", "goto": "xi_accusation"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "14":
+        {
+            "question": "That would probably make Putin the murderer. Would you agree?",
+            "options":
+            [
+                {"option": "Yes.", "goto": "vladimir_accusation"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "15":
+        {
+            "question": "That would probably make Trump the murderer. Would you agree?",
+            "options":
+            [
+                {"option": "Yes.", "goto": "trump_accusation"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        },
+        "16":
+        {
+            "question": "That would probably make Bezos the murderer. Would you agree?",
+            "options":
+            [
+                {"option": "Yes.", "goto": "bezos_accusation"},
+                {"option": "Try again", "goto": "1"}
+            ]
+        }
+    }
+}

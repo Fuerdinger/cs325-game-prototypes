@@ -1,0 +1,24 @@
+{
+    "folder": "assets/trump",
+    "dialogue":
+    [
+        {"name": "Trump", "text": "*Sigh* What now, Elon?", "image": "sad"},
+        {"name": "Elon", "text": "How's my favorite pumpkin doing?", "image": "sad"},
+        {"name": "Trump", "text": "Listen, Rocket-man...", "image": "laughing"},
+        {"name": "Trump", "text": "You're really pissing me off. I mean, it's ridiculous.", "image": "mad"},
+        {"name": "Elon", "text": "I just have a few questions I'd like to ask you. It's about one of my employees.", "image": "mad"},
+        {"name": "Trump", "text": "Oh yes, it's so very sad that Dr. Bob died yesterday. Truly, I tell you. Believe me.", "image": "sad"},
+        {"name": "Elon", "text": "Wait... how did you know that?", "image": "sad"},
+        {"name": "Trump", "text": "Because...", "image": "laughing"},
+        {"name": "Trump", "text": "I killed him.", "image": "neutral"},
+        {"name": "Trump", "text": "I'm kidding, I'm kidding. Believe me.", "image": "laughing"},
+        {"name": "Elon", "text": "(Hmm... interesting...) Well, I guess I'll see you later, Don.", "image": "sad"},
+        {"name": "Trump", "text": "................", "image": "neutral"}
+    ],
+    "accusation":
+    [
+        {"name": "Trump", "text": "My opponent is a liar!", "image": "mad"},
+        {"name": "Trump", "text": "Wrong!", "image": "mad"},
+        {"name": "Trump", "text": "Fake news!", "image": "mad"}
+    ]
+}

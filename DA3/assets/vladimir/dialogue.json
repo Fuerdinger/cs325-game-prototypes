@@ -1,0 +1,26 @@
+{
+    "folder": "assets/vladimir",
+    "dialogue":
+    [
+        {"name": "Putin", "text": "Fancy seeing you here, Elon. Vhat is it zis time?", "image": "fishing"},
+        {"name": "Elon", "text": "Catch anything today?", "image": "fishing"},
+        {"name": "Putin", "text": "Da.", "image": "fishing"},
+        {"name": "Elon", "text": "Yeah I just wanted to ask you a few questions.", "image": "fishing"},
+        {"name": "Putin", "text": "Elon, vhat did I say ze last time ve spoke? In zis country ve don't ask questions.", "image": "intimidating"},
+        {"name": "Elon", "text": "Could you humor me just this once, Putin? This is really important.", "image": "intimidating"},
+        {"name": "Putin", "text": "I've got to get back to assassinating my political opponents, I don't have ze time for zis.", "image": "horse"},
+        {"name": "Elon", "text": "Did you kill Dr. Bob? Yes or no?", "image": "horse"},
+        {"name": "Putin", "text": "*Heavy breathing*", "image": "scared"},
+        {"name": "Putin", "text": "Elon, I am former KGB. Everyone knows zis.", "image": "scared"},
+        {"name": "Putin", "text": "Don't give me a reason to kill you, just like I killed Dr. Joe.", "image": "intimidating"},
+        {"name": "Elon", "text": "Wait, you killed Dr. Joe?", "image": "intimidating"},
+        {"name": "Putin", "text": "Da, but I don't know who zis Dr. Bob iz.", "image": "scared"},
+        {"name": "Putin", "text": "I'm leaving.", "image": "horse"}
+    ],
+    "accusation":
+    [
+        {"name": "Putin", "text": "I did not think it vould come to zis.", "image": "scared"},
+        {"name": "Putin", "text": "You two are idiots.", "image": "intimidating"},
+        {"name": "Putin", "text": "Have fun in ze gulag.", "image": "horse"}
+    ]
+}
