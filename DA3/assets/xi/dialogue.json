@@ -2,26 +2,26 @@
     "folder": "assets/xi",
     "dialogue":
     [
-        {"name": "Xi Jinping", "text": "Hi Elon!!!!!!!!!!!!!!", "image": "happy"},
+        {"name": "Jinping", "text": "Hi Elon!!!!!!!!!!!!!!", "image": "happy"},
         {"name": "Elon", "text": "Ni hao, President Jinping.", "image": "happy"},
-        {"name": "Xi Jinping", "text": "That's \"Supreme Emperor Jinping\" to you, foolish American!", "image": "mad"},
+        {"name": "Jinping", "text": "That's \"Supreme Emperor Jinping\" to you, foolish American!", "image": "mad"},
         {"name": "Elon", "text": "I'm not actually an American but we're splitting hairs. I had a question I needed to ask you.", "image": "mad"},
-        {"name": "Xi Jinping", "text": "Oh sure ask anything!!!", "image": "happy"},
+        {"name": "Jinping", "text": "Oh sure ask anything!!!", "image": "happy"},
         {"name": "Elon", "text": "One of my employees was killed the other day. But up until his death he's been experiencing a high fever and coughing.", "image": "happy"},
         {"name": "Elon", "text": "Does this ring a bell?", "image": "happy"},
-        {"name": "Xi Jinping", "text": ".........", "image": "sad"},
+        {"name": "Jinping", "text": ".........", "image": "sad"},
         {"name": "Elon", "text": "I also found this photo at his desk 2 days before his death.", "image": "tank"},
-        {"name": "Xi Jinping", "text": ".........", "image": "sad"},
+        {"name": "Jinping", "text": ".........", "image": "sad"},
         {"name": "Elon", "text": "Mr. Supreme Emperor?", "image": "sad"},
-        {"name": "Xi Jinping", "text": "...........................", "image": "sad"},
-        {"name": "Xi Jinping", "text": "Speak to anyone about this and you're dead.", "image": "mad"},
+        {"name": "Jinping", "text": "...........................", "image": "sad"},
+        {"name": "Jinping", "text": "Speak to anyone about this and you're dead.", "image": "mad"},
         {"name": "Elon", "text": "Nice talking to you.", "image": "mad"}
     ],
     "accusation":
     [
-        {"name": "Xi Jinping", "text": "This makes me most unhappy.", "image": "mad"},
-        {"name": "Xi Jinping", "text": "Of course I contaminated Dr. Bob's food with the coronavirus!", "image": "mad"},
-        {"name": "Xi Jinping", "text": "I just didn't think you'd figure it out.", "image": "sad"},
-        {"name": "Xi Jinping", "text": "But you'll be getting a taste of the virus soon... just you wait....", "image": "mad"}
+        {"name": "Jinping", "text": "This makes me most unhappy.", "image": "mad"},
+        {"name": "Jinping", "text": "Of course I contaminated Dr. Bob's food with the coronavirus!", "image": "mad"},
+        {"name": "Jinping", "text": "I just didn't think you'd figure it out.", "image": "sad"},
+        {"name": "Jinping", "text": "But you'll be getting a taste of the virus soon... just you wait....", "image": "mad"}
     ]
 }

@@ -143,11 +143,12 @@ var dialoguescene = new Phaser.Class(
             expressions[asset].visible = false;
         }
 
+        textbox = this.add.image(400, 300, "textbox");
         textboxname = this.add.text(78, 451, "Name");
-        textboxtext = this.add.text(64, 478, "Test");
+        textboxtext = this.add.text(64, 485, "Test");
         textboxtext.setWordWrapWidth(700, true);
 
-        textbox = this.add.image(400, 300, "textbox");
+        
         music = this.sound.add(folder + "music");
         music.play();
         if (obj["isAccusation"] == true)

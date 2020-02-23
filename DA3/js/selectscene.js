@@ -59,6 +59,7 @@ var selectscene = new Phaser.Class(
         jsonOptions = this.cache.json.get("options")["options"][optionKey];
 
         this.add.text(0, 0, jsonOptions["question"]);
+        this.add.text(0, 550, "W/S or Up/Down arrows to choose, 'Enter' to select");
 
         keys = this.input.keyboard.addKeys("W, A, S, D, Enter");
         cursors = this.input.keyboard.createCursorKeys();
@@ -68,7 +69,7 @@ var selectscene = new Phaser.Class(
 
         for (var i = 0; i < jsonOptions["options"].length; i++)
         {
-            textoptions.push(this.add.text(0, (i+1) * 100, jsonOptions["options"][i]["option"]));
+            textoptions.push(this.add.text(0, (i+1) * 70, jsonOptions["options"][i]["option"]));
         }
 
         keys.W.on("up", function(event){changeSelectedOption(-1)});
