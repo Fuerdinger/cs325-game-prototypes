@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Who Killed Dr. Bob? A Mystery Game</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/loadscene.js"></script>
+    <script src="js/homepage.js"></script>
+    <script src="js/chickenGame.js"></script>
+    <script src="js/stompGame.js"></script>
+    <script src="js/dialoguescene.js"></script>
+    <script src="js/endscene.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Who Killed Dr. Bob? A Mystery Game</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game uses the visual novel genre to feature an original story with puzzle-like gameplay elements towards the end. Each interrogation sequence has a drastically different mood, depending on the relationships of the characters in the particular scene.
+</li>
+
+<li><strong>Technical Merit:</strong>
+My code is really small yet the game is quite lengthy. I do this using .json files to represent menu options, and I also use .json files for each set of dialogue. 
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how to create menus that read options from .json files, as well as use "scenes" in Phaser 3 (called "states" in Phaser 2) which helped manage the different sections of my game.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+All assets were borrowed from online. <br>
+<a href = "http://crooksandliars.com/files/primary_image/16/10/angry_trump_0.jpg">Trump 1</a> <br>
+<a href = "http://cdn.mamamia.com.au/wp/wp-content/uploads/2015/08/10144223/Donald-Trump-smug-feature.jpg">Trump 2</a> <br>
+<a href = "https://i2-prod.mirror.co.uk/incoming/article11259907.ece/ALTERNATES/s1200/PROD-US-President-Donald-Trump-waits-for-a-me.jpg">Trump 3</a> <br>
+<a href="https://www.thenation.com/wp-content/uploads/2017/11/Donald-Trump-Sad-rtr-img.jpg?scale=896&compress=80">Trump 4</a> <br>
+
+<a href="https://media.breitbart.com/media/2018/07/Xi-Jinping-scowl-pointing-getty-640x480.jpg">Xi 1</a> <br>
+<a href="https://cdn.vox-cdn.com/thumbor/0uLYDV6P0QwXkW1pPTCZ7JigayQ=/0x0:3630x2420/1200x800/filters:focal(1364x969:1944x1549)/cdn.vox-cdn.com/uploads/chorus_image/image/62670284/1073768028.jpg.0.jpg">Xi 2</a> <br>
+<a href="http://media.breitbart.com/media/2017/07/chinese-president-xi-jinping-waving-getty.jpg">Xi 3</a> <br>
+<a href="https://freedomhouse.org/sites/default/files/styles/detail/public/field/image/Winnie%20the%20Pooh%20big.jpg?itok=brrP2jaj">Xi 4</a> <br>
+
+<a href="https://i.kinja-img.com/gawker-media/image/upload/s--Nny4N_SP--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/gbszoogb5arz3bi4q4bq.jpg">Putin 1</a> <br>
+<a href="http://1.bp.blogspot.com/_dNDcHtiKdf4/S7Em45h2xiI/AAAAAAAAGzk/CDNWaTBOi3k/s400/Putin+angry.jpg">Putin 2</a> <br>
+<a href="http://2.bp.blogspot.com/-oeYeDYLiQXA/TkveJHFWR6I/AAAAAAAAAOQ/Cz5VA4Wn2bE/s1600/PUtin+Shirtless+on+Horse.jpg">Putin 3</a> <br>
+<a href="http://i.cbc.ca/1.3199651.1452551563!/fileImage/httpImage/image.jpg_gen/derivatives/original_940/russia-vladimir-putin-goes-fishing-shirtless-in-siberia-july-2013.jpg">Putin 4</a> <br>
+
+<a href="https://theblast.com/wp-content/uploads/2019/01/0110_jeff-bezos-national-inquirer.jpg">Bezos 1</a> <br>
+<a href="https://frostsnow.com/uploads/biography/2018/01/21/jeff-bezos.jpg">Bezos 2</a> <br>
+<a href="https://amp.businessinsider.com/images/5abaa9aa8c439630008b482c-750-562.jpg">Bezos 3</a> <br>
+<a href="https://i.insider.com/5624fc66dd08959e348b4663?width=480">Bezos 4</a> <br>
+
+<a href="https://www.silverdoctors.com/wp-content/uploads/2018/09/ElonMuskSmokingWeed-00700-420.jpg">Elon 1</a> <br>
+<a href="https://i.insider.com/5c82c90d2628983d9870df08?width=2400">Elon 2</a> <br>
+<a href="https://im.indiatimes.in/content/2018/Nov/elon_musk_1543236489.jpg">Elon 3</a> <br>
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/260px-Elon_Musk_Royal_Society.jpg">Elon 4</a> <br>
+<a href="https://www.ccn.com/wp-content/uploads/2019/02/Elon-Musk-NTB-1231.jpg">Elon 5</a> <br>
+
+I Can Feel it Coming by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/3893-i-can-feel-it-coming">https://incompetech.filmmusic.io/song/3893-i-can-feel-it-coming</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Past Sadness by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/5024-past-sadness">https://incompetech.filmmusic.io/song/5024-past-sadness</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Metalmania by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/4042-metalmania">https://incompetech.filmmusic.io/song/4042-metalmania</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Inspired by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/3918-inspired">https://incompetech.filmmusic.io/song/3918-inspired</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Danse Morialta by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/3602-danse-morialta">https://incompetech.filmmusic.io/song/3602-danse-morialta</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Doobly Doo by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/3667-doobly-doo">https://incompetech.filmmusic.io/song/3667-doobly-doo</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Pamgaea by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/4193-pamgaea">https://incompetech.filmmusic.io/song/4193-pamgaea</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>"
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I did not use anyone else's code or start with any templates. However, I did base my scene structure on https://www.phaser.io/examples/v3/view/scenes/changing-scene. My game is most similar to Phoenix Wright: Ace Attorney, a game which is mostly a visual novel (like mine) but ocassionally blends in puzzle elements to keep the player engaged. Like my game, Phoenix Wright focuses on murder mysteries.
+</li>
+
+<li><strong>High Concept:</strong>
+Join forces with Elon Musk and interview elite suspects to find the truth behind Dr. Bob's mysterious death!
+</li>
+
+<li><strong>Theme:</strong>
+I used the "celebrity sighting" storymatic theme.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+<br>Input: Keyboard<br>
+Randomness: deterministic<br>
+Play style: Storyteller<br>
+Genre: visual novel / puzzle
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The gameplay mechanic this prototype is evaluating is communcation with NPC's via branching menus/dialogue trees. As a result the actual gameplay is rather dry, but having effective menus is still a really important "mechanic" for a game.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to get emotionally invested in the riveting plot and play the game multiple times to see all the endings. Humor is a major focus of the game as well, and I want players to laugh at the different dialogue and scenarios.
+</li>
+
+<li><strong>Gameplay:</strong>
+The only input the player has in the game is either hitting "Enter" to advance the title screen, a dialogue box, or select a menu option. W/S and Up Arrow/Down Arrow are used to navigate multiple options. One of the gameplay mechanics I had planned was an ability to choose the questions you ask suspects, which could result in more information being exposed or less information being exposed.
+</li>
+
+<li><strong>Strategies:</strong>
+To complete the game, players will have to pay close attention to each interrogation sequence. Of course, they can still brute force the questionaire at the end, but all puzzle games suffer from this to some extent.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The game is set in the real world. Dr. Bob (play my first digital assignment to learn more about him) is an employee at SpaceX and has been murdered by an unknown party. Elon Musk tasks you, another SpaceX employee, to track down the killer, which Elon has narrowed down to 4 rich elites.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience for this game is anyone 12-18 years old. Anyone who can read can play, but the humor is targeted towards younger people, and is a major focus of the game, so I imagine older folks likely would find the game too silly.
+</li>
+
+<li><strong>Play Time:</strong>
+The game takes about 4 minutes to play. However, the ability of a player to skip dialogue boxes if they desire means that the game can technically be beaten in about 15 seconds, but not on the first playthrough.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
