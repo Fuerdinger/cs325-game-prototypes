@@ -14,7 +14,7 @@ var dialogue =
     "Here, you get to stomp the cluck out of the viruses with this giant foot I programmed. Note that if too many viruses accumulate here, the game will end.",
     "Click anywhere to launch the stomping algorithm.",
     "Click the red X to return to the homepage.",
-    "You'll notice that pop up adds accumulate on the homepage over time. Don't trust them, for cluck's sake. Once you're ready, click to start the game!"
+    "You'll notice that pop up ads accumulate on the homepage over time. Don't trust them, for cluck's sake. Once you're ready, click to start the game!"
 ];
 var dialogueIndex;
 var images;
