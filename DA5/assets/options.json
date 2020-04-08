@@ -1,0 +1,63 @@
+{
+    "options":
+    {
+        "0": 
+        {
+            "question": "DR. BOB: BIG SHIFT",
+            "options":
+            [
+                {"option": "Start the game!", "goto": "start"},
+                {"option": "Controls", "goto": "controls"},
+                {"option": "Options", "goto": "options"}
+            ]
+        },
+        "controls":
+        {
+            "question": "Controls",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": "WASD to move", "goto": "0"},
+                {"option": "W / Space to jump, climb ladders", "goto": "0"},
+                {"option": "E to shift perspective", "goto": "0"}
+            ]
+        },
+        "options": 
+        {
+            "question": "This game has no options menu.",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": "Then why is this menu here?", "goto": "options2"}
+            ]
+        },
+        "options2": 
+        {
+            "question": "It's just a placeholder.",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": "Okay.", "goto": "options3"}
+            ]
+        },
+        "options3": 
+        {
+            "question": ".........",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": ".........", "goto": "options4"}
+            ]
+        },
+
+        "options4": 
+        {
+            "question": "..............",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": ".................................", "goto": "options3"}
+            ]
+        }
+    }
+}

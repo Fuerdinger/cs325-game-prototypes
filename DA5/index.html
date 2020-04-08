@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DR. BOB: BIG SHIFT</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/loadscene.js"></script>
+    <script src="js/cutScene.js"></script>
+    <script src="js/levelScene.js"></script>
+    <script src="js/menuScene.js"></script>
+    <script src="js/endscene.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>DR. BOB: BIG SHIFT</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+My game is themed around navigating a Windows-like operating systems, which is not a common theme in many games.
+</li>
+
+<li><strong>Technical Merit:</strong>
+I have each scene in the game (homepage, egg scene, virus scene) run at the same time, so even while the user is putting eggs in the basket, viruses and pop up ads are still spawning in other scenes. There is also a full tutorial with pictures and sound which explains how to play.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how to work with mouse events and run different scenes concurrently.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+All assets were created by me, with the exception of: <br>
+
+<a href="http://3.bp.blogspot.com/-HGzqxA_mwwM/VdRDt7fQ7SI/AAAAAAAARZA/Vg4aZDulvKg/w1200-h630-p-k-no-nu/windows-xp-bliss-wallpapers-hd-wallpapers.jpg">Windows XP Background</a> <br>
+
+Beauty Flow by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/5025-beauty-flow">https://incompetech.filmmusic.io/song/5025-beauty-flow</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Vegas Glitz by Kevin MacLeod <br>
+Link: <a href="https://incompetech.filmmusic.io/song/4580-vegas-glitz">https://incompetech.filmmusic.io/song/4580-vegas-glitz</a> <br>
+License: <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>" <br>
+
+Dialogue was created from using text-to-speech at <a href="https://tetyys.com/SAPI4/">Microsoft Sam TTS Generator</a>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I did not start from any examples when making my game, although I did look at a few to see how they accomplished certain tasks. These include https://www.phaser.io/examples/v3/view/physics/arcade/world-bounds-event, https://www.phaser.io/examples/v3/view/physics/arcade/move-to-pointer, and https://phaser.io/examples/v3/view/input/mouse/over-and-out-events. My game does not really resemble any other game I've played or seen, but the idea originated from old malware programs which would force the user to play games, or else the computer's data would be wiped.
+</li>
+
+<li><strong>High Concept:</strong>
+Multitask killing viruses, deleting pop ups, and transporting eggs in this fast-paced clicker game!
+</li>
+
+<li><strong>Theme:</strong>
+I used the "chicken" storymatic theme.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+<br>Input: Mouse<br>
+Randomness: a lot of randomness<br>
+Play style: Achiever<br>
+Genre: point-and-click / strategy
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic being evaluated is multitasking. There are 3 relatively simple tasks, but they all compete with each other for the player's attention and change in level of urgency as the game progresses, so the player has to appropriately multitask each.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to (unlike my previous games) actually struggle to complete the game on the first couple playthroughs, but develop new skills and strategies on each successive playthrough and compete with other players to get the highest time possible. I could imagine a speedrun community developing for this game.
+</li>
+
+<li><strong>Gameplay:</strong>
+All input is handled via moving the mouse and clicking. The player's goal is to move eggs into a basket while also deleting pop up ads and killing viruses. Viruses and pop up ads accumulate over time, making navigation difficult and also causing a game over. Pop up ads are deleted by hitting their "ignore" button, and viruses are killed by clicking to cause s foot to stomp. Eggs are moved by clicking and dragging. 
+</li>
+
+<li><strong>Strategies:</strong>
+Players must rapidly switch between tasks to win. To play well, the player must move just a few eggs, then delete a few pop up ads, then stomp the foot once, and then repeat. This is the safest strategy, but if the player is trying to get a good time, then they can wait for the viruses to accumulate and kill them just before they cause a game over, while focusing the most time on moving eggs.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The game is set on Dr. Bob's work computer at SpaceX. Inspired by Microsoft Bob (an OS which shares his name), Dr. Bob develops a modern version of the outdated software (themed around his favorite animal, being chickens) but notices that it is rather prone to viruses! With the help of his virtual assistant Cluckhead, Dr. Bob gets to work fighting the virus horde.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience for this game is anyone aged 12-18. The controls are very simple, so anyone can play, but the fast paced nature of the game requires that the player be agile and fast. Old people couldn't keep up with this game.
+</li>
+
+<li><strong>Play Time:</strong>
+An average successful run of this game ranges from 1-2 minutes. However, new players will likely spend many attempts trying to beat it, and if the player plays very cautiously, the game could theoretically last forever.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
