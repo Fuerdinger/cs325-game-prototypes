@@ -1,0 +1,86 @@
+{
+    "options":
+    {
+        "0": 
+        {
+            "question": "DR. BOB: BIG SHIFT",
+            "options":
+            [
+                {"option": "Start the game!", "goto": "start", "level": "level0"},
+                {"option": "Controls", "goto": "controls"},
+                {"option": "Options", "goto": "options"},
+                {"option": "Level Select", "goto": "levels"}
+            ]
+        },
+        "controls":
+        {
+            "question": "Controls",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": "WASD to move", "goto": "0"},
+                {"option": "W / Space to jump, climb ladders", "goto": "0"},
+                {"option": "E to shift perspective", "goto": "0"}
+            ]
+        },
+        "levels":
+        {
+            "question": "Choose a level!",
+            "options":
+            [
+                {"option": "Level 0", "goto": "start", "level": "level0"},
+                {"option": "Level 1", "goto": "start", "level": "level1"},
+                {"option": "Level 2", "goto": "start", "level": "level2"},
+                {"option": "Level 3", "goto": "start", "level": "level3"},
+                {"option": "Level 4", "goto": "start", "level": "level4"},
+                {"option": "Level 5", "goto": "start", "level": "level5"},
+                {"option": "Level 6", "goto": "start", "level": "level6"},
+                {"option": "Level 7", "goto": "start", "level": "level7"},
+                {"option": "Level 8", "goto": "start", "level": "level8"},
+                {"option": "Level 9", "goto": "start", "level": "level9"},
+                {"option": "Level 10", "goto": "start", "level": "level10"},
+                {"option": "Level 11", "goto": "start", "level": "level11"},
+                {"option": "Level 12", "goto": "start", "level": "level12"},
+                {"option": "Level 13", "goto": "start", "level": "level13"},
+                {"option": "Level 14", "goto": "start", "level": "level14"}
+            ]
+        },
+        "options": 
+        {
+            "question": "This game has no options menu.",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": "Then why is this menu here?", "goto": "options2"}
+            ]
+        },
+        "options2": 
+        {
+            "question": "It's just a placeholder.",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": "Okay.", "goto": "options3"}
+            ]
+        },
+        "options3": 
+        {
+            "question": ".........",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": ".........", "goto": "options4"}
+            ]
+        },
+
+        "options4": 
+        {
+            "question": "..............",
+            "options":
+            [
+                {"option": "Back to main menu", "goto": "0"},
+                {"option": ".................................", "goto": "options3"}
+            ]
+        }
+    }
+}

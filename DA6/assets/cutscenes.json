@@ -1,0 +1,16 @@
+{
+    "cutscenes":
+    {
+        "level0":
+        {
+            "frames":
+            [
+                {"name": "DR. BOB", "text": "Welcome to DR. BOB: BIG SHIFT! v.0.9! Press E or Enter to advance the dialogue.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "In this game, you'll guide me through a series of levels which are beaten by touching the goal.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Use WASD to move, and press E to shift your perspective.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Also, I know this is pretty boring and dry, but in the final game there will actually be a story, I promise.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "But for now, this is all I got. Enjoy!", "image": "introScreen", "time": 0, "sfx": "null"}
+            ]
+        }
+    }
+}

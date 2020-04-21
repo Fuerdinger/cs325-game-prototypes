@@ -1,0 +1,1001 @@
+{
+    "anims":
+    [
+      {
+        "key": "playerMove", 
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 2,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 3,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 4,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 5,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerIdle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 0,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerJump",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 2,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 3,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerDeath",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 6,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 7,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 8,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 9,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 10,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 11,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerShoot",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 12,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerShootRun",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 14,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 15,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 16,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 17,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerClimb",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 22,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 23,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "enemy1Idle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 24,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy1Move",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 25,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 26,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy1Death",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 27,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 28,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 29,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 30,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 31,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2Idle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 36,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2Move",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 37,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 38,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2Death",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 39,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 40,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 41,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 42,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 43,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2Shoot",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 48,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2ShootRun",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 49,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 50,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "buttonIdle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 72,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "buttonPushed",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 73,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "playerOverheadMove", 
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 85,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 86,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 87,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 88,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerOverheadIdle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 84,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerOverheadJump",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 0,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 1,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerOverheadDeath",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 89,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 90,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 91,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 92,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 93,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerOverheadShoot",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 96,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerOverheadShootRun",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 97,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 98,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 99,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 100,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "playerOverheadClimb",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 0,
+            "duration": 0
+          },
+
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 1,
+            "duration": 0
+          }
+        ]
+      },
+
+      {
+        "key": "enemy1OverheadIdle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 108,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy1OverheadMove",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 109,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 110,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy1OverheadDeath",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 111,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 112,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 113,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 114,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2OverheadIdle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 120,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2OverheadMove",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 121,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 122,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2OverheadDeath",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 123,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 124,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 125,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 126,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2OverheadShoot",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 132,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "enemy2OverheadShootRun",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 133,
+            "duration": 0
+          },
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 134,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "buttonOverheadIdle",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 156,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "buttonOverheadPushed",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 157,
+            "duration": 0
+          }
+        ]
+      }
+    ],
+    "globalTimeScale": 1
+  }

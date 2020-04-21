@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DR. BOB: BIG SHIFT</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/loadscene.js"></script>
+    <script src="js/cutScene.js"></script>
+    <script src="js/levelScene.js"></script>
+    <script src="js/menuScene.js"></script>
+    <script src="js/endscene.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>DR. BOB: BIG SHIFT</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+In addition to the original artstyle, DR. BOB: BIG SHIFT features a unique perspective shifting mechanic where the player, at any time, can switch between a Mario-like side view and a Zelda-like top down view. There are other games (such as Super Paper Mario) which feature a similar mechanic, but unlike my game, these games typically do not revolve entirely around their shifting mechanics or focus on both puzzles and platforming.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Each level in the game is read into Phaser as a .json file exported from the Tiled editor. These .json files contain separate tile data for the side view and the top view, and my game parses through each object and makes a "tie" between the side sprites and the overhead sprites, so when the player presses E to shift, the sprites update their positions in a way that makes sense. Additionally, all the games animations are stored in a .json file rather than being hard coded.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how to best use OOP with Phaser to encapsulate game object behaviors.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+All assets were created exclusively by me, including the art and music. In the final game, there will be many more animations, music, and cutscenes.
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+The game started from my digital assignment 1 prototype, being the original DR. BOB. However, most of the code from that prototype was being radically changed because of my new OOP approach and the complications of the shifting mechanic. The menu system and cutscenes were based on code from my digital assignment 3 prototype, which was my visual novel game. 
+</li>
+
+<li><strong>High Concept:</strong>
+Switch between side scrolling and top down action to solve tricky puzzles and reach the goal!
+</li>
+
+<li><strong>Mandated Variety:</strong>
+<br>Input: keyboard<br>
+Randomness: deterministic<br>
+Play style: Achiever<br>
+Genre: puzzle/platformer
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic being evaluated is the perspective shifting. The two perspectives are supposed to be just two different views of the same level, except the side scrolling perspective only has a X/Z axis and compresses everything in the Y axis into 1D, and the top down perspective has an X/Y axis and compresses everything in the Z axis into 1D. Making this believable and intuitive by restricting the player's actions based on their current perspective and making the level layouts understandable is key to making the shift "work" and be fun to use.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Players should enjoy racking their brains against tough puzzles which force them to experiment with different game mechanics and use their intuition. New mechanics which add to the complexity of puzzles will be added with each level, meaning that players will be constantly learning as they play.
+</li>
+
+<li><strong>Gameplay:</strong>
+The player can move left and right with A/D and jump with W in sidescrolling mode. In top down mode, the player can move up, down, left, and right with WASD. Pressing E will cause the perspective to change. Certain objects can be picked up and placed using E to open an inventory screen, and then W/S to navigate the menu and E to select an item to place (To be implemented). In addition, there are objects (such as blocks) which can be pushed by walking into them (To be implemented). In each stage there is a goal, and touching this goal will result in the level ending. The puzzles revolve around reaching these goals. At first glance a puzzle will look like an impossible maze, but by pushing a block somewhere in one perspective the maze will shift in the other perspective, opening up a new path that may lead to the goal.
+</li>
+
+<li><strong>Strategies:</strong>
+The main strategy the player will use to solve puzzles is experimentation, specifically with the relationship between the side scrolling view and the top down view. As the game progresses the player will learn more and more about how navigating in one perspective or pushing a block in one perspective will open up new options in the other perspective.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+Dr. Bob was working in his lab one day when he accidentally created a small black hole with his particle condenser. To destroy it before it grows larger and envelops the universe, he squeezes himself in, travels through a wormhole, and then wakes up in a strange world where he must solve a series of puzzles to destroy the black hole. In this strange dimension he is able to shift his perspective from side scrolling to top down, and he must use this new ability to solve the puzzles. Occasionally between levels there will be cutscenes which show Dr. Bob interacting with characters from this strange dimension; these cutscenes will incentivize players to play the game to the very end and also keep them invested.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience for this game is men and women aged 12 - 30 who enjoy puzzle games and light hearted stories.
+</li>
+
+<li><strong>Play Time:</strong>
+Currently the play time is a couple of minutes, if the player is able to quickly solve each puzzle. In the final game, there will be many, many more puzzles.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
