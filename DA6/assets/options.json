@@ -28,23 +28,30 @@
             "question": "Choose a level!",
             "options":
             [
-                {"option": "Level 0", "goto": "start", "level": "level0"},
-                {"option": "Level 1", "goto": "start", "level": "level1"},
-                {"option": "Level 2", "goto": "start", "level": "level2"},
-                {"option": "Level 3", "goto": "start", "level": "level3"},
-                {"option": "Level 4", "goto": "start", "level": "level4"},
-                {"option": "Level 5", "goto": "start", "level": "level5"},
-                {"option": "Level 6", "goto": "start", "level": "level6"},
-                {"option": "Level 7", "goto": "start", "level": "level7"},
-                {"option": "Level 8", "goto": "start", "level": "level8"},
-                {"option": "Level 9", "goto": "start", "level": "level9"},
-                {"option": "Level 10", "goto": "start", "level": "level10"},
-                {"option": "Level 11", "goto": "start", "level": "level11"},
-                {"option": "Level 12", "goto": "start", "level": "level12"},
-                {"option": "Level 13", "goto": "start", "level": "level13"},
-                {"option": "Level 14", "goto": "start", "level": "level14"}
+                {"option": "Back", "goto": "0"},
+                {"option": "Level 0: Straight Shot", "goto": "start", "level": "level0"},
+                {"option": "Level 1: Roadblock", "goto": "start", "level": "level1"},
+                {"option": "Level 2: Challenger Approaching!", "goto": "start", "level": "level2"},
+                {"option": "Level 3: Spike Bed", "goto": "start", "level": "level3"},
+                {"option": "Level 4: Spike Bed 2: The Squeakquel", "goto": "start", "level": "level4"},
+                {"option": "Level 5: Key in a Cage", "goto": "start", "level": "level5"},
+                {"option": "Level 6: The Four Keys", "goto": "start", "level": "level6"},
+                {"option": "Level 7: Evasive Manuevers", "goto": "start", "level": "level7"},
+                {"option": "Level 8: Kongo Line Button", "goto": "start", "level": "level8"},
+                {"option": "Level 9: Rated M for Mature", "goto": "start", "level": "level9"}
             ]
         },
+        "pause":
+        {
+            "question": "Pause menu",
+            "options":
+            [
+                {"option": "Resume game", "goto": "wake"},
+                {"option": "Retry level", "goto": "retry"},
+                {"option": "Quit to main menu", "goto": "0"}
+            ]
+        },
+
         "options": 
         {
             "question": "This game has no options menu.",

@@ -12,7 +12,6 @@ var levelScene = new Phaser.Class
 
     level: null,
     isOverhead: false,
-    isPaused: false,
 
     numKeys: null,
 
@@ -23,6 +22,9 @@ var levelScene = new Phaser.Class
     playerDeathSound: null,
     shiftSound: null,
     shootSound: null,
+
+    keys: null,
+    cursors: null,
 
     objects: [],
 
@@ -108,38 +110,19 @@ var levelScene = new Phaser.Class
 
     changeLevel: function(levelName)
     {
-        /*
-        this.map.destroy();
-        this.backgroundLayer.destroy();
-        this.groundLayer.destroy();
-        this.overheadLayer.destroy();
-        this.overheadPitLayer.destroy();
-        this.spikeLayer.destroy();
-        this.overheadSpikeLayer.destroy();
-        this.level = null;*/
-        
-        keys.E.off("up");
-        //keys.Q.off("up");
-
-        /*
-        for (var i = 0; i < this.objects.length; i++)
-        {
-            this.objects[i].destroy();
-        }
-
-        this.objects = [];
-        this.isOverhead = false;
-        this.isPaused = false;
-        */
-        this.scene.start("levelScene", levelName, false);
+        this.scene.start("levelScene", {"level": levelName, "playCutscene": false});
     },
 
-    create: function(level, playCutscene)
+    create: function(obj)
     {
+        resetKeys(this.input.keyboard);
+
+        var playCutscene = obj["playCutscene"];
+        var level = obj["level"];
+
         this.level = null;
         this.objects = [];
         this.isOverhead = false;
-        this.isPaused = false;
         this.numKeys = 0;
 
         this.enemyDeathSound = this.sound.add("enemyDeathSound");
@@ -163,11 +146,11 @@ var levelScene = new Phaser.Class
         }
 
         this.level = level;
-        cursors = this.input.keyboard.createCursorKeys();
-        keys = this.input.keyboard.addKeys("W, A, S, D, E, Q, SPACE");
+        this.cursors = this.input.keyboard.createCursorKeys();
+        this.keys = this.input.keyboard.addKeys("W, A, S, D, E, Q, SPACE");
 
-        keys.E.on("up", this.changePerspective, this);
-        //keys.Q.on("up", this.pause, this);
+        this.keys.E.on("up", this.changePerspective, this);
+        this.keys.Q.on("up", this.pause, this);
 
         this.map = this.add.tilemap(level);
         var tileset = this.map.addTilesetImage("ShiftTilemap", "tilemap");
@@ -176,7 +159,7 @@ var levelScene = new Phaser.Class
         this.groundLayer = this.map.createStaticLayer("Static", tileset);
         this.groundLayer.setCollisionByExclusion(-1, true);
 
-        this.overheadLayer = this.map.createStaticLayer("Overhead", tileset);
+        this.overheadLayer = this.map.createStaticLayer("OverheadBackground", tileset);
         this.overheadPitLayer = this.map.createStaticLayer("OverheadPits", tileset);
         this.overheadPitLayer.setCollisionByExclusion(-1, true);
 
@@ -190,6 +173,12 @@ var levelScene = new Phaser.Class
         
         this.overheadSpikeLayer.setVisible(false);
 
+        this.spikeLayer.forEachTile(
+            function(tile)
+            {
+                tile.setSize(32, 7, 32, 32);
+            }, this);
+
         for (var key in objectProperties)
         {
             this.createObjects(key);
@@ -201,22 +190,19 @@ var levelScene = new Phaser.Class
 
     update: function(time, delta)
     {
-        if (!this.isPaused)
+        for (var i = 0; i < this.objects.length; i++)
         {
-            for (var i = 0; i < this.objects.length; i++)
+            if (this.objects[i].isRunning)
             {
-                if (this.objects[i].isRunning)
+                if (this.isOverhead)
                 {
-                    if (this.isOverhead)
-                    {
-                        this.objects[i].updateOverhead(time, delta);
-                    }
-                    else
-                    {
-                        this.objects[i].update(time, delta);
-                    }
-                }                
-            }
+                    this.objects[i].updateOverhead(time, delta);
+                }
+                else
+                {
+                    this.objects[i].update(time, delta);
+                }
+            }                
         }
     },
 
@@ -226,6 +212,11 @@ var levelScene = new Phaser.Class
         for (var i = 0; i < this.objects.length; i++)
         {
             this.objects[i].changePerspective();
+        }
+
+        for (var i = 0; i < this.objects.length; i++)
+        {
+            this.objects[i].overlapTest();
         }
 
         if (this.isOverhead == true)
@@ -253,8 +244,10 @@ var levelScene = new Phaser.Class
 
     pause: function()
     {
-        if (this.isPaused == true) this.isPaused = false;
-        else this.isPaused = true;
+        this.shootSound.play();
+        this.scene.sleep();
+        this.scene.launch("menuScene", {"optionKey": "pause", "cameFromLevel": this.level});
+        this.input.keyboard.resetKeys();
     }
     
 });

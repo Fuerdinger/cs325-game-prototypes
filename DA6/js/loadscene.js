@@ -49,7 +49,7 @@ var loadScene = new Phaser.Class
     create: function()
     {
         this.scene.stop("welcomeScene");
-        this.scene.start("menuScene", "0");
+        this.scene.start("menuScene", {"optionKey": 0, "cameFromLevel": null});
 
         this.sound.add("introTheme").play({loop: true});
     }

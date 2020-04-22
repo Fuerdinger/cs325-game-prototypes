@@ -14,6 +14,7 @@ var endScene = new Phaser.Class
     create: function()
     {
         this.sound.stopAll();
+        this.sound.add("endTheme").play({loop: true});
 
         this.add.sprite(400, 320, "endScreen");
         this.add.text(10, 0, "You won!").setColor("red");

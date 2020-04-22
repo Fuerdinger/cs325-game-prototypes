@@ -507,6 +507,50 @@
         ]
       },
       {
+        "key": "goal",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 62,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "goalClosed",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 69,
+            "duration": 0
+          }
+        ]
+      },
+      {
         "key": "playerOverheadMove", 
         "type": "frame",
         "frameRate": 10,
@@ -992,6 +1036,50 @@
           {
             "key": "tilemapSpriteSheet",
             "frame": 157,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "goalOverhead",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 146,
+            "duration": 0
+          }
+        ]
+      },
+      {
+        "key": "goalOverheadClosed",
+        "type": "frame",
+        "frameRate": 10,
+        "duration": 0,
+        "skipMissedFrames": true,
+        "delay": 0,
+        "repeat": 0,
+        "repeatDelay": 0,
+        "yoyo": false,
+        "showOnStart": false,
+        "hideOnComplete": false,
+
+        "frames":
+        [
+          {
+            "key": "tilemapSpriteSheet",
+            "frame": 153,
             "duration": 0
           }
         ]

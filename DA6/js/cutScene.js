@@ -15,6 +15,8 @@ var cutScene = new Phaser.Class(
     sprites: null,
     goto: null,
 
+    advanceSound: null,
+
     initialize: function cutScene()
     {
         Phaser.Scene.call(this, {key: 'cutScene'});
@@ -32,6 +34,7 @@ var cutScene = new Phaser.Class(
 
     advanceDialogue: function ()
     {    
+        this.advanceSound.play();
         if (this.frameIndex >= 0)
         {
             var oldFrame = this.frames[this.frameIndex];
@@ -81,6 +84,8 @@ var cutScene = new Phaser.Class(
     create: function(cutscene)
     {
         //this.sound.stopAll();
+
+        this.advanceSound = this.sound.add("impactSound");
 
         this.keys = this.input.keyboard.addKeys("E, Enter");
         this.keys.Enter.on("up", this.advanceDialogue, this);

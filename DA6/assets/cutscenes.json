@@ -5,11 +5,16 @@
         {
             "frames":
             [
-                {"name": "DR. BOB", "text": "Welcome to DR. BOB: BIG SHIFT! v.0.9! Press E or Enter to advance the dialogue.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Welcome to DR. BOB: BIG SHIFT! v.1.0! Press E or Enter to advance the dialogue.", "image": "introScreen", "time": 0, "sfx": "null"},
                 {"name": "DR. BOB", "text": "In this game, you'll guide me through a series of levels which are beaten by touching the goal.", "image": "introScreen", "time": 0, "sfx": "null"},
-                {"name": "DR. BOB", "text": "Use WASD to move, and press E to shift your perspective.", "image": "introScreen", "time": 0, "sfx": "null"},
-                {"name": "DR. BOB", "text": "Also, I know this is pretty boring and dry, but in the final game there will actually be a story, I promise.", "image": "introScreen", "time": 0, "sfx": "null"},
-                {"name": "DR. BOB", "text": "But for now, this is all I got. Enjoy!", "image": "introScreen", "time": 0, "sfx": "null"}
+                {"name": "DR. BOB", "text": "Use WASD to move, and press E to shift your perspective. Q will pause the game.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "You'll notice that this game has a few cool improvements over the last iteration!", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "More enemy types, new mechanics that use shifting, buttons, keys, and more!", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Sound effects, music, better UI, more menus, a level select screen...", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Twice the number of levels... with the new ones being really complex...", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "And an absolute CRAP ton of bugs were fixed. Believe me.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Whoever made this game, I think he deserves a really good grade for this. But that's just my opinion.", "image": "introScreen", "time": 0, "sfx": "null"},
+                {"name": "DR. BOB", "text": "Ok, start the game!", "image": "introScreen", "time": 0, "sfx": "null"}
             ]
         }
     }
