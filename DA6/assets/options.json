@@ -20,7 +20,8 @@
                 {"option": "Back to main menu", "goto": "0"},
                 {"option": "WASD to move", "goto": "0"},
                 {"option": "W / Space to jump, climb ladders", "goto": "0"},
-                {"option": "E to shift perspective", "goto": "0"}
+                {"option": "E to shift perspective", "goto": "0"},
+				{"option": "Q to pause game", "goto": "0"}
             ]
         },
         "levels":
